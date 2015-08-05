@@ -15,7 +15,7 @@
 	margin-right: 15%;
 } 
 
-.circle .unvisited {
+.circle.unvisited {
 	border: 4px solid #999;
 }
 
