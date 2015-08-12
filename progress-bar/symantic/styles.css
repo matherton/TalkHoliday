@@ -3,12 +3,15 @@ ol.progtrckr {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    /* remove the margin and padding below if step titles above step */
+    margin-top: -2em;
+    padding-bottom: 3em;
 }
 
 ol.progtrckr li {
     display: inline-block;
     text-align: center;
-    line-height: 3em;
+    line-height: 3.35em;
 }
 /* fix for browser rounding error hence the incosistent widths */
 ol.progtrckr[data-progtrckr-steps="2"] li { width: 49%; }
@@ -22,7 +25,7 @@ ol.progtrckr[data-progtrckr-steps="9"] li { width: 11%; }
 
 ol.progtrckr li.progtrckr-done {
     color: black;
-    border-bottom: 4px solid yellowgreen;
+    border-bottom: 4px solid #007d3b;
 }
 ol.progtrckr li.progtrckr-todo {
     color: silver; 
@@ -42,17 +45,37 @@ ol.progtrckr li:before {
 ol.progtrckr li.progtrckr-done:before {
     content: "\2713";
     color: white;
-    background-color: yellowgreen;
-    height: 1.2em;
-    width: 1.2em;
-    line-height: 1.2em;
+    background: #007d3b;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
     border: none;
-    border-radius: 1.2em;
+    border-radius: 2em;
+    color: #fff;
 }
 ol.progtrckr li.progtrckr-todo:before {
     content: "\039F";
     color: silver;
     background-color: white;
-    font-size: 1.5em;
-    bottom: -1.6em;
+    font-size: 2.5em;
+    bottom: -0.9em;
+}
+
+.step-title {
+    position: relative;
+    /* position step title below step s*/
+    top: 4em; 
+}
+
+@media (max-width: 700px) {
+    
+    ol.progtrckr li {
+        display: block;
+    }
+
+    .step-title {
+        position: absolute;
+        top: auto;
+    }
+
 }
