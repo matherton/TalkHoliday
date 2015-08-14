@@ -1,22 +1,5 @@
-/*jQuery(function ($) {
-    $('div.btn-group[data-toggle-name]').each(function () {
-        var group = $(this);
-        var form = group.parents('form').eq(0);
-        var name = group.attr('data-toggle-name');
-        var hidden = $('input[name="' + name + '"]', form);
-        $('button', group).each(function () {
-            var button = $(this);
-            button.live('click', function () {
-                hidden.val($(this).val());
-                alert(hidden.val());
-            });
-            if (button.val() == hidden.val()) {
-                button.addClass('active');
-            }
-        });
-    });
+/* simple btton group select functionality */
+$('.btn-group label').click(function (){
+    $('.btn-group label').removeClass('btn-inverse');
+    $(this).addClass('btn-inverse');
 });
-
-$('.btn-group label').click(function ({
-
-}));*/

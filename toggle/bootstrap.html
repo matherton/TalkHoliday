@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>jQuery toggle demo</title>
+  <title>Bootstrap 2 toggle btn</title>
 
   <meta name="description" content="vanilla progress bar">
   <meta name="author" content="Mark Atherton">
@@ -19,36 +19,44 @@
 
     <body>
 
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-primary">
-            <input class="toggle-input" type="radio" name="options" id="option1" autocomplete="off"> Radio 1
-          </label>
-          <label class="btn btn-primary">
-            <input class="toggle-input" type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-          </label>
-          <label class="btn btn-primary">
-            <input class="toggle-input" type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-          </label>
-        </div>
+        <h1>Bootstrap 2 toggle buttons</h1>
+        <p>These toggle bttons will work in any browser but require a little bit of jQuery</p>
 
         <div class="btn-group" data-toggle="buttons">
           <label class="btn">
-            <input class="radio-position" type="radio" name="sex" value="male">Male
+            <input class="radio-position" type="radio" name="gender" value="male">Male
           </label>
           <label class="btn">
-            <input class="radio-position" type="radio" name="sex" value="female">Female
+            <input class="radio-position" type="radio" name="gender" value="female">Female
           </label>
           <label class="btn">
-            <input class="radio-position" type="radio" name="sex" value="transgender">transgender
+            <input class="radio-position" type="radio" name="gender" value="transgender">transgender
           </label>
           <label class="btn">
-            <input class="radio-position" type="radio" name="sex" value="hymaphrodite">hymaphrodite
+            <input class="radio-position" type="radio" name="gender" value="hymaphrodite">hymaphrodite
           </label>
+          <label class="btn">
+            <input class="radio-position" type="radio" name="gender" value="hymaphrodite">boy < 16
+          </label>
+          <label class="btn">
+            <input class="radio-position" type="radio" name="gender" value="hymaphrodite">girl < 16
+          </label>
+        </div>
+
+        <h2>Toggle buttons</h2>
+        <p>These toggle bttons will only work in modern browsers (IE9+) but not require any JS or any framework</p>
+
+        <div class="vannila-toggle">
+          <input id="rad1" class="radio-position" type="radio" name="rad" value="option-1"><label for="rad1">Option 1</label>
+          <input id="rad2" class="radio-position" type="radio" name="rad" value="option-2"><label for="rad2">Option 2</label>
+          <input id="rad3" class="radio-position" type="radio" name="rad" value="option-3"><label for="rad3">Option 3</label>
+          <input id="rad4" class="radio-position" type="radio" name="rad" value="option-4"><label for="rad4">Option 4</label>
+          <input id="rad5" class="radio-position" type="radio" name="rad" value="option-5"><label for="rad5">Option 5</label>
         </div>
 
         <!-- Link to external JavaScript file -->
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>  
+        <script src="js/scripts.js"></script> 
     </body>
 </html>
