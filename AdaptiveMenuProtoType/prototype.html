@@ -1,0 +1,215 @@
+
+<!-- Prototype Adaptive menu interface -->
+
+<!-- Styles -->
+<style type="text/css">
+	/*integrate and less'afy*/
+
+	
+
+	/* Mobile-first views */
+	@media (max-width: 480px) {
+
+		/*TODO - still to add hover, focust and active states to button*/
+
+		#managementUIContainer{
+			background-color: #ccc;
+			padding-bottom:30px;
+			margin-bottom: 30px;
+			position: relative;
+		}
+		#expandTitle{
+			border: 1px solid #333;
+			background-color: #ffcc00;
+			display: block;
+		}
+		#expandTitle:hover,#expandTitle:focus{
+			border: 1px solid #333;
+			background-color: #ff0000;
+			display: block;
+		}
+		#expandTitle h3{
+			padding: 10px;
+			background-color: aqua;
+		}
+		#expandTitle h3:after{
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 35px;
+			content: "ButtonIcon";
+			color: white;
+			background-color: black;
+			top:0;
+			right:0;
+			margin-right: 30px;
+			margin-top: 30px;
+		}
+
+		.sectionGroup{
+			margin: 10px;
+			position: absolute;
+			top:-99999;
+		}
+		.sectionGroup.expanded{
+			margin: 10px;
+			position: relative;
+			top:inherit;
+		}
+	}
+
+	/*Add media query for desktop version and apply styles*/
+
+	@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+		#managementUIContainer{
+			background-color: #ccc;
+			padding-bottom:30px;
+			margin-bottom: 30px;
+			position: relative;
+		}
+		#expandTitle{
+			border: 1px solid #333;
+			background-color: #ffcc00;
+			display: block;
+		}
+		#expandTitle:hover,#expandTitle:focus{
+			border: 1px solid #333;
+			background-color: #ff0000;
+			display: block;
+		}
+		#expandTitle h3{
+			padding: 10px;
+			background-color: aqua;
+		}
+		#expandTitle h3:after{
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 35px;
+			content: "ButtonIcon";
+			color: white;
+			background-color: black;
+			top:0;
+			right:0;
+			margin-right: 30px;
+			margin-top: 30px;
+		}
+
+		.sectionGroup{
+			margin: 10px;
+			position: absolute;
+			top:-99999;
+		}
+		.sectionGroup.expanded{
+			margin: 10px;
+			position: relative;
+			top:inherit;
+		}
+
+	}
+
+
+</style>
+
+
+<div id="managementUIContainer">
+	<span id="expandTitle" class="desktop-hidden">
+		<h3>UI ELement title</h3>
+	</span>
+
+	<div class="sectionGroup">
+		<span class="sectionButton">
+			<h4>Section title</h4>
+		</span>
+		<span class="sectionPanel">
+			<ul>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+			</ul>
+		</span>
+	</div>
+	<div class="sectionGroup">
+		<span class="sectionButton">
+			<h4>Section title</h4>
+		</span>
+		<span class="sectionPanel">
+			<ul>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+			</ul>
+		</span>
+	</div>
+	<div class="sectionGroup">
+		<span class="sectionButton">
+			<h4>Section title</h4>
+		</span>
+		<span class="sectionPanel">
+			<ul>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+				<li><a href="#">Link element text</a></li>
+			</ul>
+		</span>
+	</div>
+</div>
+
+<!-- Script requirements -->
+<!-- Temp usage of JQuery for this prototype -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Prototype content only - do not use for final developement -->
+<script type="text/javascript">
+
+
+function handleBtnClick(event) {
+    event = event || window.event;
+    var pressed = event.target.getAttribute("aria-pressed") == "true";
+    //change the aria-pressed value as the button is toggled:
+    event.target.setAttribute("aria-pressed", pressed ? "false" : "true");
+    //... (perform the button's logic here)
+    $( "#expandTitle" ).toggleClass( "active" );
+    $( ".sectionGroup" ).toggleClass( "expanded" );
+  	}
+
+  function handleBtnKeyUp(event) {
+    event = event || window.event;
+    if (event.keyCode === 32) { // check for Space key
+      handleBtnClick(event);
+    }
+  }
+	
+/*TODO - Turn this into a function that can fire on pageLoad as well as on resize*/
+	$(window).resize(function() {
+		 var viewportWidth = $(window).width();
+		 	/*Mobile view*/
+			if (( viewportWidth <= 600 ) || ( viewportWidth > 767 ) && (viewportWidth < 921)) {
+				 //Setup Markup to add attribute requirements for mobile
+				 console.log( "on mobile" );
+				  $("#expandTitle").attr("role","button");
+				  $("#expandTitle").attr("onclick","handleBtnClick(event)");
+				  $("#expandTitle").attr("onKeyUp","handleBtnKeyUp(event)");
+				  $("#expandTitle").attr("tabIndex","0");
+			}
+			/*Descktop view */
+			else {
+				 console.log( "NOT on mobile" );
+				  $("#expandTitle").removeAttr("role");
+				  $("#expandTitle").removeAttr("onclick");
+				  $("#expandTitle").removeAttr("onKeyUp");
+			}
+			/*Desktop view*/
+			/*ToDo - Do same as above but to the sectionButtons and sectionGrouds*/
+	});
+	$(window).trigger('resize');
+
+</script>
+
+
+
+
