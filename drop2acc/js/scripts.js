@@ -1,7 +1,7 @@
  // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab_content").hide();
-    $(".tab_content:first").hide();
+    //$(".tab_content:first").hide();
 
   /* if in tab mode */
     $("ul.tabs li").hover(function() {
@@ -18,16 +18,25 @@
 	  
     });
     /* hide content when tab hovered off */
-    $('ul.tabs li').mouseleave(function () {
+    $('ul.tabs li').mouseover(function () {
+	    //$('.tab_content').css('display', 'block');
+		$(this).addClass('active');
+	})
+    $('ul.tabs li.active, .tab_content').mouseleave(function () {
 		$('.tab_content').css('display', 'none');
-		$('.active').css('display', 'block');
+		$('ul.tabs li').removeClass('active');
 	});
-	$('.tab_content').mouseenter(function () {
-		$(this).css('display', 'block');
-	})
-	$('.tab_content').mouseleave(function () {
-		$(this).css('display', 'none');
-	})
+
+$("#citydrop").hide();
+
+$("#cityclick").mouseover(function () {
+    $("#citydrop").slideDown('slow');
+});
+
+$("#wrapper").mouseleave(function () {
+    $("#citydrop").slideUp('slow');
+});
+
 	/* if in drawer mode */
 	$(".tab_drawer_heading").click(function() {
       
