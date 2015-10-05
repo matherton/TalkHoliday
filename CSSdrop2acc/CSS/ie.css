@@ -1,0 +1,102 @@
+/* IE 8 and below styles no media query */
+
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{
+	border:0;
+}
+address,caption,cite,code,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+
+#drop2acc{
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    float:left; /* Clear floats */
+    width:100%;
+    /* Bring the drop above everything else--uncomment if needed.
+    position:relative;
+    z-index:5;*/
+}
+
+#drop2acc li{
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+#drop2acc label{
+    display:block;
+    padding:5px;
+    color:#010101;
+    background:#efefef;
+    text-decoration:none;
+}
+#drop2acc label:hover{
+    color:#010101;
+    background:#efefef;
+    text-decoration:underline;
+    /*padding-bottom: 10px; Added padding  on hover to push the dropdowns a bit */
+}
+
+/*--- DROPDOWN ---*/
+#drop2acc ul{
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#drop2acc ul li{
+    /* padding-top:1px; Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+    background: #efefef;
+}
+#drop2acc ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#drop2acc li:hover ul{ /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed NOTE was 0 changed to -40px to lign up with my drop down titles */
+    /* padding-top: 10px;  so the drop downs account for the padding bottom on #drop2acc a:hover; */
+}
+#drop2acc li.last:hover ul{ /* Display the dropdown on hover for last drop down right aligned */
+    left:-35px; /* Bring back on-screen drop down right alighns to the last drop down */
+}
+#drop2acc li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    /*background:#6b0c36;*/
+    text-decoration:underline;
+}
+#drop2acc li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#drop2acc li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background:#333;
+    color: #fff;
+}
+
+input[type='radio'] {
+	display:none;
+}
