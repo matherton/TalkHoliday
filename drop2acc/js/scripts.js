@@ -22,20 +22,13 @@
 	    //$('.tab_content').css('display', 'block');
 		$(this).addClass('active');
 	})
+	$('ul.tabs li.active').mouseleave(function () {
+		$('.tab_content').css('display', 'none');
+	})
     $('ul.tabs li.active, .tab_content').mouseleave(function () {
 		$('.tab_content').css('display', 'none');
 		$('ul.tabs li').removeClass('active');
 	});
-
-$("#citydrop").hide();
-
-$("#cityclick").mouseover(function () {
-    $("#citydrop").slideDown('slow');
-});
-
-$("#wrapper").mouseleave(function () {
-    $("#citydrop").slideUp('slow');
-});
 
 	/* if in drawer mode */
 	$(".tab_drawer_heading").click(function() {
