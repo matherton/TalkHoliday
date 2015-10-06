@@ -76,6 +76,12 @@ abbr,acronym{
     border-top-left-radius: 0;
     padding-right: 7em;
 }
+#drop2acc .last ul.content.drop {
+    border-top-right-radius: 0;
+    border-top-left-radius: 6px;
+    right: 0;
+    margin-left: -2.5em;
+}
 #drop2acc ul li{
     /* padding-top:1px; Introducing a padding between the li and the a give the illusion spaced items */
     float:none;
@@ -124,6 +130,10 @@ input[type='radio'] {
     border-top-color: #efefef;
     border-left: 7em solid #efefef;
     border-right: 7.4em solid #efefef;
+}
+.last .drop:before {
+    left:auto;
+    right: 0;
 }
 ul.content.drop {
     margin-top: 15px;
