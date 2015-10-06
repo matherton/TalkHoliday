@@ -30,6 +30,10 @@ q:before,q:after{
 abbr,acronym{
 	border:0;
 }
+/* TODO: remove before adding code into bootstrap as panel already defined */
+div.panel-group {
+	max-width: 766.024px;
+}
 
 @media only screen and (min-width: 751px) {
 
@@ -48,28 +52,34 @@ abbr,acronym{
 	    float:left;
 	    margin-right:10px;
 	    position:relative;
+	    width: 30%;
 	}
 	#drop2acc label{
 	    display:block;
-	    padding:5px;
+	    padding: 1em;
 	    color:#010101;
 	    background:#efefef;
 	    text-decoration:none;
+	    border-radius: 6px;
 	}
 	#drop2acc label:hover{
 	    color:#010101;
 	    background:#efefef;
 	    text-decoration:underline;
-	    /*padding-bottom: 10px; Added padding  on hover to push the dropdowns a bit */
+	    border-bottom-left-radius: 0;
+	    border-bottom-right-radius: 0;
 	}
 
 	/*--- DROPDOWN ---*/
 	#drop2acc ul{
-	    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
-	    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	    background:#efefef; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	    /* background:rgba(255,255,255,0); But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
 	    list-style:none;
 	    position:absolute;
 	    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	    border-radius: 6px;
+	    border-top-left-radius: 0;
+	    padding-right: 7em;
 	}
 	#drop2acc ul li{
 	    /* padding-top:1px; Introducing a padding between the li and the a give the illusion spaced items */
@@ -84,7 +94,7 @@ abbr,acronym{
 	    /* padding-top: 10px;  so the drop downs account for the padding bottom on #drop2acc a:hover; */
 	}
 	#drop2acc li.last:hover ul{ /* Display the dropdown on hover for last drop down right aligned */
-	    left:-35px; /* Bring back on-screen drop down right alighns to the last drop down */
+	    float:right; /* Bring back on-screen drop down right alighns to the last drop down */
 	}
 	#drop2acc li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
 	    /*background:#6b0c36;*/
@@ -101,7 +111,30 @@ abbr,acronym{
 	input[type='radio'] {
 		display:none;
 	}
-	
+
+	/* drop down shape */
+	.drop {
+	    max-width: 80%;
+	    padding: 1em;
+	    position: relative;
+	    background: #efefef;
+	    border-radius: 6px;
+	}
+	.drop:before {
+	    content: "";
+	    position: absolute;
+	    top: -20px;
+	    left: 0;
+	    border-top: 20px solid;
+	    border-top-color: #efefef;
+	    border-left: 7em solid #efefef;
+	    border-right: 7.4em solid #efefef;
+	}
+	ul.content.drop {
+		margin-top: 15px;
+	}
+	/* end of drop down shape */
+
 }
 
 @media only screen and (min-width: 651px) and (max-width:750px) {
