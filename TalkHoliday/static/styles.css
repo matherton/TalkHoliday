@@ -540,6 +540,54 @@ header .offer_banner a {
 	margin-left: 1rem; 
 } 
 
+.hero-1, .hero-2, .hero-3 {
+	/*height: 964px;
+	border-bottom: 1px solid black;*/
+	height: 13em;
+	width: auto;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+@media all and (min-width: 480px) { 
+	.hero-1, .hero-2, .hero-3 {
+		height: 17em;
+	} 
+}
+@media all and (min-width: 736px) { 
+	.hero-1, .hero-2, .hero-3 {
+		height: 27em;
+	}
+}
+@media all and (min-width: 980px) { 
+	.hero-1, .hero-2, .hero-3 {
+		height: 37em;
+	} 
+}
+@media all and (min-width: 1280px) {
+	.hero-1, .hero-2, .hero-3 {
+		height: 47em;
+	}
+}
+@media all and (min-width: 1690px) {
+	.hero-1, .hero-2, .hero-3 {
+		height: 57em;
+	}
+}
+
+.hero-1 {
+	background-image:url('img/pic_1.jpg');
+}
+
+.hero-2 {
+	background-image:url('img/pic_2.jpg');
+}
+
+.hero-3 {
+	background-image:url('img/pic_3.jpg');
+}
+
 footer { 
 	color: #ae1757; 
 	background: #e5e1e6; 
