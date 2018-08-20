@@ -1,12 +1,6 @@
-/* styles for everything second converstion */
-/**
-   Coded by /u/j0be in scss.
-   See scss source here -> https://codepen.io/j0be/pen/MKRVyN
-*/
-
-/* v2 colours */ /* new v3 base colour vars */ 
+/* new v3 base colour vars */ 
 header { 
-	position: absolute; 
+	position: relative; 
 	top: 0; 
 	left: 0; 
 	right: 0; 
@@ -17,7 +11,7 @@ header {
 
 @media screen and (min-width: 64.063em) { 
 	header { 
-		position: fixed; 
+		position: relative; 
 	} 
 } 
 
@@ -540,6 +534,54 @@ header .offer_banner a {
 	margin-left: 1rem; 
 } 
 
+.hero-1, .hero-2, .hero-3 {
+	/*height: 964px;
+	border-bottom: 1px solid black;*/
+	height: 13em;
+	width: auto;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+@media all and (min-width: 480px) { 
+	.hero-1, .hero-2, .hero-3 {
+		height: 17em;
+	} 
+}
+@media all and (min-width: 736px) { 
+	.hero-1, .hero-2, .hero-3 {
+		height: 27em;
+	}
+}
+@media all and (min-width: 980px) { 
+	.hero-1, .hero-2, .hero-3 {
+		height: 37em;
+	} 
+}
+@media all and (min-width: 1280px) {
+	.hero-1, .hero-2, .hero-3 {
+		height: 47em;
+	}
+}
+@media all and (min-width: 1690px) {
+	.hero-1, .hero-2, .hero-3 {
+		height: 57em;
+	}
+}
+
+.hero-1 {
+	background-image:url('img/pic_1.jpg');
+}
+
+.hero-2 {
+	background-image:url('img/pic_2.jpg');
+}
+
+.hero-3 {
+	background-image:url('img/pic_3.jpg');
+}
+
 footer { 
 	color: #ae1757; 
 	background: #e5e1e6; 
@@ -566,7 +608,7 @@ footer ol {
 } 
 
 footer .logo-holder { 
-	width: 60%; 
+	width: 45%; 
 	float: left; 
 	margin-top: 5rem; 
 	padding-left: 1rem; 
@@ -579,7 +621,7 @@ footer .logo-holder {
 } 
 
 footer .links-holder { 
-	width: 40%; 
+	width: 35%; 
 	float: left; 
 } 
 
@@ -609,7 +651,6 @@ header.logged_out, footer.logged_out {
 	background-color: #FFF; 
 	color: #009DDB; 
 } 
-
 
 /*styles for new footer first conversion 
 footer { 
