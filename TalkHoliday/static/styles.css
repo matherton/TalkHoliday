@@ -48,7 +48,19 @@ table {
 	border-spacing: 0;
 }
 
-/* new v3 base colour vars */ 
+/* new v3 base colour vars */
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('fonts/OpenSans-Light.woff') format('woff'), 
+  url('fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans Light', sans-serif, Arial, Helvetica, sans-serif;
+}
+
 header { 
 	position: relative; 
 	top: 0; 
