@@ -624,7 +624,12 @@ header .offer_banner a {
 }
 
 .hero-2 {
-	background-image:url('img/pic_2.jpg');
+	background:linear-gradient(
+      rgba(174, 23, 87, 0.75), 
+      rgba(174, 23, 87, 0.75)
+    ),url('img/pic_2.jpg') no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
 }
 
 .hero-3 {
