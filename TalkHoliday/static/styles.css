@@ -119,23 +119,23 @@ header .new-nav .show-for-large-up a {
 
 header .new-nav .show-for-large-up .search-link { 
 	color: #ae1757; 
-	background: url("../svg/search-cerise.svg") no-repeat; background-size: 1.2em; 
+	background: url("svg/search-cerise.svg") no-repeat; background-size: 1.2em; 
 } 
 
 header .new-nav .show-for-large-up .destinations-link { 
 	color: #ae1757; 
-	background: url("../svg/destinations-cerise.svg") no-repeat; 
+	background: url("svg/destinations-cerise.svg") no-repeat; 
 	background-size: 1.2em; 
 } 
 
 header .new-nav .show-for-large-up .trips-link { 
 	color: #ae1757; 
-	background: url("../svg/trips-cerise.svg") no-repeat; background-size: 1.2em; 
+	background: url("svg/trips-cerise.svg") no-repeat; background-size: 1.2em; 
 } 
 
 header .new-nav .show-for-large-up .clubs-link { 
 	color: #ae1757; 
-	background: url("../svg/groups-cerise.svg") no-repeat; 
+	background: url("svg/groups-cerise.svg") no-repeat; 
 	background-size: 1.2em; 
 } 
 
@@ -397,7 +397,7 @@ header .new-nav .onboarding_anchor {
 } 
 
 header .new-nav .login-in-btn { 
-	background: #ae1757 url("../svg/user-female.svg") no-repeat; 
+	background: #ae1757 url("svg/user-female.svg") no-repeat; 
 	background-size: 1.2em; 
 	color: #fff; 
 	padding: 1em; 
@@ -409,7 +409,7 @@ header .new-nav .login-in-btn {
 } 
 
 header .new-nav .sign-up-btn { 
-	background: #f08700 url("../svg/sign-up.svg") no-repeat; 
+	background: #f08700 url("svg/sign-up.svg") no-repeat; 
 	background-size: 1.2em; 
 	color: #fff; 
 	padding: 1em; 
