@@ -587,38 +587,35 @@ header .offer_banner a {
 } 
 
 .hero-1, .hero-2, .hero-3 {
-	/*height: 964px;
-	border-bottom: 1px solid black;*/
-	height: 14em;
-	width: auto;
+	min-height: 10em;
 	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;
+	background-position: center top;
+    background-size: 100% auto;
 }
 
 @media all and (min-width: 480px) { 
 	.hero-1, .hero-2, .hero-3 {
-		height: 17em;
+		min-height: 17em;
 	} 
 }
 @media all and (min-width: 736px) { 
 	.hero-1, .hero-2, .hero-3 {
-		height: 27em;
+		min-height: 27em;
 	}
 }
 @media all and (min-width: 980px) { 
 	.hero-1, .hero-2, .hero-3 {
-		height: 37em;
+		min-height: 37em;
 	} 
 }
 @media all and (min-width: 1280px) {
 	.hero-1, .hero-2, .hero-3 {
-		height: 47em;
+		min-height: 60em;
 	}
 }
 @media all and (min-width: 1690px) {
 	.hero-1, .hero-2, .hero-3 {
-		height: 57em;
+		min-height: 73em;
 	}
 }
 
