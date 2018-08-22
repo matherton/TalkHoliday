@@ -115,9 +115,10 @@ header .new-nav {
 } 
 
 header .new-nav #mobile_menu_trigger { 
-	color: #fff; 
-	background: #ae1757; 
-	top: 0; 
+  color: #fff;
+  background: #ae1757;
+  padding: 0.65em;
+  top: 0;
 } 
 
 header .new-nav .show-for-large-up { 
