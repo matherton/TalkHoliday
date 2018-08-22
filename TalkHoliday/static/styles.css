@@ -127,29 +127,35 @@ header .new-nav .show-for-large-up {
 
 header .new-nav .show-for-large-up a { 
 	width: max-content; 
-	padding: 0 1.5em; 
+	padding: .5em 1.5em; 
 } 
 
 header .new-nav .show-for-large-up .search-link { 
 	color: #ae1757; 
-	background: url("svg/search-cerise.svg") no-repeat; background-size: 1.2em; 
+	background: url("svg/search-cerise.svg") no-repeat; 
+  background-size: 1.2em;
+  background-position: center left;  
 } 
 
 header .new-nav .show-for-large-up .destinations-link { 
 	color: #ae1757; 
 	background: url("svg/destinations-cerise.svg") no-repeat; 
-	background-size: 1.2em; 
+	background-size: 1.2em;
+  background-position: center left; 
 } 
 
 header .new-nav .show-for-large-up .trips-link { 
 	color: #ae1757; 
-	background: url("svg/trips-cerise.svg") no-repeat; background-size: 1.2em; 
+	background: url("svg/trips-cerise.svg") no-repeat; 
+  background-size: 1.2em;
+  background-position: center left; 
 } 
 
 header .new-nav .show-for-large-up .clubs-link { 
 	color: #ae1757; 
 	background: url("svg/groups-cerise.svg") no-repeat; 
-	background-size: 1.2em; 
+	background-size: 1.2em;
+  background-position: center left; 
 } 
 
 header .new-nav .show-for-large-up .subnav_trigger { 
