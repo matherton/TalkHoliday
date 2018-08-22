@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -609,9 +609,13 @@ header .offer_banner a {
 }
 
 .text-holder {
-  width: 50%;
+  width: 70%;
   font-size: 12px;
   color: #fff;
+}
+
+.text-holder p {
+  margin-top: 1em;
 }
 
 .text-holder h1 {
@@ -627,6 +631,24 @@ header .offer_banner a {
   width: 30px;
   height: auto;
   top: 7px;
+}
+
+.hero-1 .text-holder p strong {
+ // margin-top: 1rem;
+ // display: inline-block;
+}
+
+.hero-1 .text-holder button {
+  padding: .5em 1em;
+  margin: .5em 0;
+  display: block;
+  min-width: 8rem;
+  background: #f08700;
+} 
+
+.hero-1 .text-holder button.login {
+  background: #fff;
+  color: #ae1757;
 }
 
 .hero-1 .text-holder h1:before {
