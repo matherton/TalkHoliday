@@ -633,11 +633,6 @@ header .offer_banner a {
   top: 7px;
 }
 
-.hero-1 .text-holder p strong {
- // margin-top: 1rem;
- // display: inline-block;
-}
-
 .hero-1 .text-holder button {
   padding: .5em 1em;
   margin: .5em 0;
@@ -674,11 +669,17 @@ header .offer_banner a {
 	.hero-1, .hero-2, .hero-3 {
 		min-height: 17em;
 	} 
+  .text-holder {
+    width: 50%;
+  }
 }
 @media all and (min-width: 736px) { 
 	.hero-1, .hero-2, .hero-3 {
 		min-height: 27em;
 	}
+  .text-holder {
+    font-size: 16px;
+  }
 }
 @media all and (min-width: 980px) { 
 	.hero-1, .hero-2, .hero-3 {
@@ -697,7 +698,12 @@ header .offer_banner a {
 }
 
 .hero-1 {
-	background-image:url('img/pic_1.jpg');
+	background:linear-gradient(
+      rgba(0,0,0,0.6), 
+      rgba(0,0,0,0.6)
+    ),url('img/pic_1.jpg') no-repeat;
+    background-position: center top;
+    background-size: 100% auto; 
 }
 
 .hero-2 {
@@ -710,7 +716,12 @@ header .offer_banner a {
 }
 
 .hero-3 {
-	background-image:url('img/pic_3.jpg');
+	background:linear-gradient(
+      rgba(0,0,0,0.6), 
+      rgba(0,0,0,0.6)
+    ), url('img/pic_3.jpg') no-repeat;
+    background-position: center top;
+    background-size: 100% auto;;
 }
 
 footer { 
