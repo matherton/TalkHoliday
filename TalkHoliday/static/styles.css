@@ -602,7 +602,8 @@ header .offer_banner a {
 	min-height: 10em;
 	background-repeat:no-repeat;
 	background-position: center top;
-    background-size: 100% auto;
+  background-size: 100% auto;
+  color: #fff;
 }
 
 @media all and (min-width: 480px) { 
