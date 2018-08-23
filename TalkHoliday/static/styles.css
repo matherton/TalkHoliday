@@ -799,4 +799,32 @@ footer .links-holder a span {
 header.logged_out, footer.logged_out { 
 	background-color: #FFF; 
 	color: #009DDB; 
-} 
+}
+
+.scroller-holder {
+  width: 100%;
+  background: rgba(240,136,0,1);
+  background: -moz-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,136,0,1)), color-stop(31%, rgba(240,136,0,1)), color-stop(50%, rgba(246,41,12,1)), color-stop(71%, rgba(174,23,86,1)), color-stop(100%, rgba(174,23,86,1)));
+  background: -webkit-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: -o-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: -ms-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: linear-gradient(to right, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08800', endColorstr='#ae1756', GradientType=1 );
+}
+/* Defines the width of the carousel and centers it on the page */
+.post-scroller {
+  width: 90%;
+  padding: 2em 0;
+  margin: 0 auto;  
+}
+
+/* The width of each slide */
+.slick-slide {
+  width: 350px;
+}
+
+/* Color of the arrows */
+.slick-next::before, .slick-prev::before {
+  border: blue;
+}
