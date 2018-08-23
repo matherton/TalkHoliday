@@ -824,6 +824,12 @@ header.logged_out, footer.logged_out {
   width: 350px;
 }
 
+@media screen and (max-width: 600px) {
+  .slick-slide img {
+    margin: 0 auto;
+  }
+}
+
 /* Color of the arrows */
 .slick-next::before, .slick-prev::before {
   border: blue;
