@@ -2,7 +2,7 @@ var viewportWidth = window.innerWidth || document.documentElement.clientWidth ||
 if(viewportWidth <= 600) {
 	slideNo = 1;
 } else {
-	slideNo = 4;
+	slideNo = 3;
 }
 
 $('.post-scroller').slick({
