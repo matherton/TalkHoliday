@@ -858,9 +858,9 @@ header.logged_out, footer.logged_out {
   font-weight: normal;
 }
 
-@media screen and (max-width: 600px) {
-  .slick-slide img {
-    
+@media screen and (min-width: 768px) {
+  .scroller-holder {
+    display:none;
   }
 }
 

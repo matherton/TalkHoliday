@@ -1,7 +1,7 @@
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if(viewportWidth <= 600) {
 	slideNo = 1;
-} else if(viewportWidth <= 1280) {
+} else if(viewportWidth <= 767) {
 	slideNo = 2;
 } else if(viewportWidth <= 1920) {
 	slideNo = 3;
