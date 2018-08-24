@@ -1,8 +1,12 @@
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if(viewportWidth <= 600) {
 	slideNo = 1;
-} else {
+} else if(viewportWidth <= 1280) {
 	slideNo = 3;
+} else if(viewportWidth <= 1920) {
+	slideNo = 4;
+} else {
+	slideNo = 5;
 }
 
 $('.post-scroller').slick({

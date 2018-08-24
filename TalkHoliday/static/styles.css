@@ -829,11 +829,33 @@ header.logged_out, footer.logged_out {
   margin: 0 auto;
 }
 
-.slide-holder p {
+.slide-holder .text {
   background: #fff;
   padding: 1em;
   width: 320px;
+  height: 220px;
   margin: 0 auto;
+  color: #ae1756;
+  overflow: hidden;
+}
+
+.slide-holder .text .title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.slide-holder .text .avatar {
+  float: left;
+  width: 2em;
+  height: auto;
+  position: relative;
+  bottom: .5em;
+  border-radius: 1em;
+  margin-right:.5em;
+}
+
+.slide-holder .text .title .location {
+  font-weight: normal;
 }
 
 @media screen and (max-width: 600px) {
