@@ -864,7 +864,22 @@ header.logged_out, footer.logged_out {
   }
 }
 
-/* Color of the arrows 
-.slick-next::before, .slick-prev::before {
-  border: blue;
-}*/
+.explanation {
+  text-align: center;
+  padding: 2em;
+  color: #ae1756;
+}
+
+.explanation h1 {
+  color: #ae1756;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.explanation h1 span {
+  font-weight: bolder;
+}
+
+.explanation p {
+  margin: 1em 0 1em 0;
+}
