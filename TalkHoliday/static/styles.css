@@ -908,8 +908,22 @@ header.logged_out, footer.logged_out {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08800', endColorstr='#ae1756', GradientType=1 );
 }
 
-.explanationExpand.explanation h1, .explanationExpand.explanation p {
+.explanationExpand.explanation h1 {
   color: #fff;
+}
+
+.explanationExpand.explanation p {
+  margin: 0;
+}
+
+.explanationExpand.explanation p:first-child {
+  margin-top: 1em;
+}
+
+.explanationExpand.explanation p {
+  padding: 1em;
+  color: #000;
+  background: #fff;
 }
 
 .content-one {
