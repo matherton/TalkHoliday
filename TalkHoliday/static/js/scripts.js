@@ -18,3 +18,10 @@ $('.post-scroller').slick({
 	prevArrow: '<div class="slick-prev"><i class="fa fa-chevron-left"></i></div>',
 	nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
 });
+
+$('.hero-scoller').slick({
+	autoplay: true,
+  autoplaySpeed: 8000,
+  infinite: true,
+  slidesToShow: 1
+});

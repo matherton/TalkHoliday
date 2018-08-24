@@ -859,8 +859,20 @@ header.logged_out, footer.logged_out {
 }
 
 @media screen and (min-width: 768px) {
-  .scroller-holder {
-    display:none;
+  .scroller-holder, .hero-1, .hero-2, .hero-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-scoller {
+    display: none;
+  }  
+}
+
+@media screen and (min-width: 769px) {
+  .hero-scoller {
+    display: block;
   }
 }
 
