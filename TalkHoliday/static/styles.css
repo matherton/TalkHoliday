@@ -859,19 +859,19 @@ header.logged_out, footer.logged_out {
 }
 
 @media screen and (min-width: 768px) {
-  .scroller-holder, .hero-1, .hero-2, .hero-3 {
+  .scroller-holder, .hero-1, .hero-2, .hero-3, .explanation {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hero-scoller {
+  .hero-scoller, .explanationExpand {
     display: none;
   }  
 }
 
 @media screen and (min-width: 769px) {
-  .hero-scoller {
+  .hero-scoller, .explanationExpand {
     display: block;
   }
 }
@@ -894,4 +894,24 @@ header.logged_out, footer.logged_out {
 
 .explanation p {
   margin: 1em 0 1em 0;
+}
+
+.explanationExpand {
+  margin-top: -2em;
+  background: rgba(240,136,0,1);
+  background: -moz-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,136,0,1)), color-stop(31%, rgba(240,136,0,1)), color-stop(50%, rgba(246,41,12,1)), color-stop(71%, rgba(174,23,86,1)), color-stop(100%, rgba(174,23,86,1)));
+  background: -webkit-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: -o-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: -ms-linear-gradient(left, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  background: linear-gradient(to right, rgba(240,136,0,1) 0%, rgba(240,136,0,1) 31%, rgba(246,41,12,1) 50%, rgba(174,23,86,1) 71%, rgba(174,23,86,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08800', endColorstr='#ae1756', GradientType=1 );
+}
+
+.explanationExpand.explanation h1, .explanationExpand.explanation p {
+  color: #fff;
+}
+
+.content-one {
+  display:none;
 }

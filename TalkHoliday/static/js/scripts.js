@@ -25,3 +25,7 @@ $('.hero-scoller').slick({
   infinite: true,
   slidesToShow: 1
 });
+
+$('.expand-one').click(function(){
+  $('.content-one').slideToggle('fast');
+});
